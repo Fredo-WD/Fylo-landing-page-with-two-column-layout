@@ -428,10 +428,11 @@ ion-icon:hover {
         display: flex;
         align-items: center;
         flex-direction: row-reverse;
+        padding: 100px 80px;
     }
 
     .row-2__illustration {
-        max-width: 40%;
+        max-width: 42%;
     }
 
     .row-2-bg {
