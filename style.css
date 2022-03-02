@@ -1,0 +1,578 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root {
+    /* ## Colors */
+
+    /* ### Primary */
+
+    --Very-Dark-Blue: hsl(243, 87%, 12%);
+    --Desaturated-Blue: hsl(238, 22%, 44%);
+
+    /* ### Accent */
+
+    --Bright-Blue: hsl(224, 93%, 58%);
+    --Moderate-Cyan: hsl(170, 45%, 43%);
+    --hover-blue: hsla(221, 100%, 71%, 1);
+
+
+    /* ### Neutral */
+
+    --Light-Grayish-Blue: hsl(240, 75%, 98%);
+    --Light-Gray: hsl(0, 0%, 75%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+img {
+    max-width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 24px 98px 24px;
+}
+
+.header__logo {
+    max-width: 25%;
+}
+
+.header__navigation {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.header__navigation > a {
+    text-decoration: none;
+    color: var(--Very-Dark-Blue);
+    font-size: .75rem;
+    font-weight: 400;
+}
+
+.container {
+    text-align:center;
+}
+
+.intro {
+    padding: 0 28px 90px 28px;
+}
+
+.intro__description {
+    display: flex;
+    flex-direction: column;
+}
+
+.description__heading {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    color: var(--Very-Dark-Blue);
+    margin-bottom: 24px;
+}
+
+.description__text {
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--Very-Dark-Blue);
+    margin-bottom: 24px;
+}
+
+.description__email-input {
+    margin-bottom: 16px;
+    min-height: 40px;
+    width: 100%;
+    padding: .5rem;
+}
+
+.description__get-started-btn {
+    background-color: var(--Bright-Blue);
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    min-height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .3rem;
+}
+
+.description__get-started-btn:hover {
+    opacity: 80%;
+    cursor: pointer;
+}
+
+.row-2-bg {
+    background-image: url(./images/bg-curve-mobile.svg);
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    background-position: top;
+    padding-top: 3.3rem;
+    /* background-color: var(--Light-Grayish-Blue); */
+}
+
+.row-2 {
+    background-color: rgb(248, 248, 254);
+}
+
+.row-2__illustration {
+    margin-bottom: 5.4375rem;
+}
+
+.row-2__productive {
+    padding: 0 35px 81px 35px;
+}
+
+.productive__heading {
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 24px;
+}
+
+.productive__text {
+    font-size: 14px;
+    line-height: 21px;  
+    margin-bottom: 16px; 
+}
+
+.productive__see-how-fylo-works {
+    margin: 36px 0;
+    color: var(--Moderate-Cyan);
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.productive__see-how-fylo-works {
+    cursor: pointer;
+    opacity: 80%;
+}
+
+.see-how-fylo-works__arrow {
+    /* margin-top: 16px; */
+    /* margin-bottom: 47px; */
+}
+
+.testimonial {
+    text-align: start;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 8px 4px rgba(56, 56, 56, 0.0458843);
+    border-radius: 3.93258px;
+    padding: 9.5px 12.7px 18.6px 26px;
+}
+
+.testimonial__text {
+    font-size: 10px;
+    line-height: 18px;
+    letter-spacing: .38px;
+    color: var(--Very-Dark-Blue);
+    margin-bottom: 12px;
+}
+
+.testimonial__user {
+    max-width: 50%;
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+}
+
+.user__avatar {
+    max-width: 20%;
+    margin-right: 1rem;
+    border-radius: 1rem;
+}
+
+.user__name-and-occupation {
+    gap: 1rem;
+}
+
+.name-and-occupation__name {
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: .45px;
+    color: var(--Very-Dark-Blue)
+} 
+.name-and-occupation__occupation {
+    font-size: 6px;
+    font-weight: 400;
+    line-height: 11.8px;
+    letter-spacing: 0.3px;
+    color: var(--Very-Dark-Blue);
+} 
+
+.row-3 {
+    background-color: var(--Desaturated-Blue);
+    padding: 54px 48px 71px 48px;
+}
+
+.row-3__heading {
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.row-3__text {
+    font-size: 14px;
+    line-height: 21px;
+    color: white;
+    margin-bottom: 1.5rem;
+}
+
+.row-3__sign-up {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    gap: 8px;
+    max-width: 85%;
+}
+
+.sign-up__input {
+    border-radius: 1.47059px;
+    border: none;
+    min-height: 32px;
+    box-shadow: 1px 1px 3px rgba(7, 4, 59, 0.157043);
+    padding: .5rem;
+}
+
+.sign-up__btn {
+    text-decoration: none;
+    background-color: var(--Bright-Blue);
+    border-radius: 1.47059px;
+    min-height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 10px;
+    font-weight: 700;
+    box-shadow: 1px 1px 3px rgba(7, 4, 59, 0.157043);
+}
+
+.sign-up__btn:hover {
+    cursor: pointer;
+    opacity: 70%;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 65px 39px 42px 39px;
+    background-color: var(--Very-Dark-Blue);
+    color: white;
+}
+
+.footer__contact {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+svg {
+    /* width: 100%;  */
+    /* margin-bottom: 32px; */
+    position: relative;
+    right: 60px;
+}
+
+#fylo-logo-color {
+    fill: white;
+}
+
+.contact {
+    display: flex;
+    gap: 1rem;
+}
+
+.footer__navigation {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.navigation__left {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.navigation__right {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.navigation__link {
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+
+}
+
+.navigation__link:hover {
+    cursor: pointer;
+    color: var(--Bright-Blue);
+}
+
+.socials {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.socials__icons {
+    display: flex;
+    gap: .7063rem;
+    justify-content: center;
+}
+
+.socials__link {
+   display: grid;
+   justify-content: center;
+   align-items: center;
+    border: 1px solid black;
+    border-color: white;
+    border-radius:60rem;
+    width: 32px;
+    height: 31px;
+    margin-bottom: 1.5rem;
+}
+
+.socials__link:hover {
+    cursor: pointer;
+    border-color: var(--hover-blue);
+}
+
+ion-icon {
+    font-size: 16px;
+    color: white;
+}
+
+ion-icon:hover {
+    color: var(--hover-blue);
+    cursor: pointer;
+}
+
+.footer__att {
+
+}
+
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media all and (min-width:1440px) {
+
+    header {
+        padding: 65px 80px 0 80px;
+    }
+
+    .header__navigation > a {
+        font-size: 16px;
+    }
+
+    .intro {
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+        flex-direction: row-reverse;
+        padding: 86px 80px 164px 80px;
+        text-align: start;
+    }
+
+    .intro__illustration {
+        max-width: 50%;
+    }
+
+    .intro__description {
+
+    }
+
+    .description__heading {
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 60px;
+    }
+
+    .description__text {
+        font-size: 17px;
+        line-height: 24px;
+        letter-spacing: .53px;
+    }
+
+    .description__sign-up {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .description__email-input {
+        width: 50%;
+    }
+
+    .description__get-started-btn {
+        width: 35%;
+        height: 45px;
+    }
+    .row-2 {
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+
+    .row-2__illustration {
+        max-width: 50%;
+    }
+
+    .row-2-bg {
+        background-image: url(./images/bg-curve-desktop.svg);
+        padding-top: 5rem;
+    }
+
+    .row-2__productive {
+        text-align: start;
+        display: grid;
+    }
+
+    .productive__heading {
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 47px;
+    }
+
+    .productive__text {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+    .productive__see-how-fylo-works {
+        font-size: 16px;
+        margin-right: auto;
+    }
+
+    .testimonial {
+        width: 51%;
+        min-height: 215px;
+        padding: 34px 26px;
+    }
+
+    .testimonial__text {
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 23px;
+        margin-bottom: 1rem;
+    }
+
+    .testimonial__user {
+        max-width: 60%;
+    }
+
+    .user__avatar {
+        /* max-width: 30%; */
+    }
+
+    .user__name-and-occupation {
+
+    }
+
+    .name-and-occupation__name {
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: .55px;
+    }
+
+    .name-and-occupation__occupation {
+        font-size: 8px;
+        letter-spacing: .36px;
+    }
+
+    .row-3 {
+        display: flex;
+        text-align: start;
+        padding: 100px 120px 100px 80px;
+    }
+
+    .row-3__left-flex {
+        width: 70%;
+    }
+
+    .row-3__heading {
+        font-size: 32px;
+        font-weight: 700;
+        margin-bottom: 1rem;
+    }
+
+    .row-3__text {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        width: 70%;
+    }
+
+    .row-3__sign-up {
+        width: 50%;
+        margin: 0;
+    }
+
+    .sign-up__input {
+        width: 85%;
+        min-height: 48px;
+        margin-bottom: 1rem;
+        padding: 1rem;
+    }
+
+    .sign-up__btn {
+        width: 35%;
+        min-height: 48px;
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+    footer {
+        padding: 167px 80px 86px 80px;
+        flex-direction: row;
+        gap: 185px;
+        position: relative;
+    }
+
+    svg {
+        transform: scale(1.5);
+        right: 50px;
+        position: absolute;
+        left: 30px;
+        bottom: 230px;
+        
+    }
+
+    .footer__navigation {
+        flex-direction: row;
+        gap: 200px;
+
+    }
+
+    .socials {
+        align-self: flex-start;
+    }
+
+    .attribution {
+        /* display: none; */
+        position: absolute;
+        bottom: 0px;
+        left: 40vw;
+
+    }
+
+}
+
+
